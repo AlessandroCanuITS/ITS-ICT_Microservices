@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d5b968e7-ccc8-4ca4-86c2-44361691c28b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs/02-eCommerce_microservices/customer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/labs/02-eCommerce_microservices/customer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs/02-eCommerce_microservices/customer/customer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/labs/02-eCommerce_microservices/customer/customer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs/02-eCommerce_microservices/order/order.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/01-Library_application/mysolution/Deploy-ms/borrow-ms.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/01-Library_application/mysolution/Deploy-ms/borrow-ms.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

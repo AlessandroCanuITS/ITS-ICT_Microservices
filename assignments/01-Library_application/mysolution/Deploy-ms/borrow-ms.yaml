@@ -2,32 +2,32 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: borrowing-deployment
+  name: borrow-deployment
   labels:
-    app: borrowing
+    app: borrow
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: borrowing
+      app: borrow
   template:
     metadata:
       labels:
-        app: borrowing
+        app: borrow
     spec:
       containers:
-        - name: borrowing-ms
+        - name: borrow-ms
           image: alessandrocanu/borrowing:1.0-SNAPSHOT
           ports:
-            - containerPort: 8124
+            - containerPort: 8103
           volumeMounts:
             - mountPath: /app/config
               readOnly: true
-              name: borrowing-conf
+              name: borrow-conf
       volumes:
-        - name: borrowing-conf
+        - name: borrow-conf
           configMap:
-            name: borrowing-conf
+            name: borrow-conf
             items:
               - key: application.properties
                 path: application.properties
@@ -35,18 +35,18 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: borrowing-service
+  name: borrow-service
   labels:
-    app: borrowing
+    app: borrow
 spec:
   type: NodePort
   ports:
     - name: http
       nodePort: 32103
-      port: 8124
-      targetPort: 8124
+      port: 8103
+      targetPort: 8103
   selector:
-    app: borrowing
+    app: borrow
 ---
 apiVersion: v1
 kind: ConfigMap
